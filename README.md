@@ -28,7 +28,7 @@ a{color:inherit;text-decoration:none}
 button{font-family:inherit}
 
 /* ── NAV ── */
-nav{position:sticky;top:0;z-index:100;background:rgba(4,16,31,0.88);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+nav{position:sticky;top:0;z-index:100;background:rgba(4,16,31,0.88);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
 .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:2rem;height:64px;padding:0 2rem}
 .logo{font-family:'DM Serif Display',serif;font-size:1.45rem;flex-shrink:0}
 .logo span{color:var(--teal)}
@@ -130,7 +130,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(4,16,31,0.88);backdrop-fil
 .pay-desc{font-size:.68rem;color:var(--t3)}
 
 /* ── MODAL ── */
-.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(5px);z-index:999;align-items:center;justify-content:center;padding:1rem}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.72);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);z-index:999;align-items:center;justify-content:center;padding:1rem}
 .overlay.open{display:flex}
 .modal{background:var(--s1);border:1px solid var(--bactive);border-radius:16px;width:100%;max-width:500px;max-height:88vh;overflow-y:auto;animation:up .28s ease}
 @keyframes up{from{transform:translateY(22px);opacity:0}to{transform:translateY(0);opacity:1}}
@@ -164,7 +164,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(4,16,31,0.88);backdrop-fil
 .frow select option{background:var(--s2)}
 .half{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
 .pm-pick{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-bottom:1rem}
-.pm-opt{background:var(--s2);border:1px solid var(--border);border-radius:8px;padding:.55rem .75rem;cursor:pointer;display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--t2);transition:border-color .2s,color .2s;user-select:none}
+.pm-opt{background:var(--s2);border:1px solid var(--border);border-radius:8px;padding:.55rem .75rem;cursor:pointer;display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--t2);transition:border-color .2s,color .2s;-webkit-user-select:none;user-select:none}
 .pm-opt.sel{border-color:var(--bactive);color:var(--teal)}
 .pm-ring{width:9px;height:9px;border-radius:50%;border:1.5px solid currentColor;flex-shrink:0;transition:background .2s}
 .pm-opt.sel .pm-ring{background:var(--teal)}
